@@ -1,0 +1,30 @@
+.currentOrderPage{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    width: 60%;
+    font-size: 25px;
+    background:rgba(137, 12, 12, 0.4);
+    text-align: center;
+}
+
+td, th{
+    margin: 1rem;
+    width: 100px;
+}
+
+button {
+    background-color: #eee;
+    padding: 1.2rem 0;
+    border-radius: 4px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 8px 8px 8px;
+    width: 150px;
+}
+
+button:hover {
+    background-color: #cfd8dc;
+}

@@ -1,0 +1,88 @@
+.addPage{
+    margin: 2rem;   
+}
+
+.nameInputCon{
+    display: flex;
+    justify-content: center;
+}
+
+.form-label{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-shadow: 1px 2px 3px #808080;
+    font-size: 20px;
+}
+
+.menuItems{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.menuItem{
+    width: 45%;
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    width: 50%;
+    height: auto;
+}
+
+.manipulateCon{
+    text-align: center;
+}
+
+h3,p {
+  margin: 0;
+  padding: .7rem;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    padding: .5rem;
+    width: 100%;
+    max-width: 150px;
+    font-size: 20px;
+    box-sizing: content-box;
+    display: block;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 8px 8px 8px;
+}
+
+input:focus {
+    outline: #336699 auto 1px;
+}
+
+.totalCon{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: #eee;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 8px 8px 8px;
+}
+
+button:hover {
+    background-color: #cfd8dc;
+}
+
+button:disabled {
+    background-color: #808080;
+    color: #ccc;
+    cursor: auto;
+}

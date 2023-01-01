@@ -1,0 +1,41 @@
+<div class="currentOrderPage">
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Customer</th>
+                <th>Total</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of currentList">
+                <!--aタグを最初につけるとずれてしまうtdの中に他のタグを入れる-->
+                <td>
+                    <a routerLink="/add/{{order.id}}">
+                        {{order.getDateString()}}
+                    </a>
+                </td>
+                <td>
+                    <a routerLink="/add/{{order.id}}">
+                        {{order.getTimeString()}}
+                    </a>
+                </td>
+                <td>
+                    <a routerLink="/add/{{order.id}}">
+                        <td>{{order.customerName}}</td>
+                    </a>
+                </td>
+                <td>
+                    <a routerLink="/add/{{order.id}}">
+                        <td>{{order.getTotal()}}</td>
+                    </a>
+                </td>
+                <td>
+                    <button type="button" (click)="moveToCompleted(order)">Completed</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

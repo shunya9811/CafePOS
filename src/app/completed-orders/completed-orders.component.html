@@ -1,0 +1,22 @@
+<div class="completedOrderPage">
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Customer</th>
+                <th>Total</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let order of completedList">
+                <td>{{order.getDateString()}}</td>
+                <td>{{order.getTimeString()}}</td>
+                <td>{{order.customerName}}</td>
+                <td>{{order.getTotal()}}</td>
+                <td> </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

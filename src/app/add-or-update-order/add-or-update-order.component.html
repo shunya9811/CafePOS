@@ -1,0 +1,23 @@
+<div class="addPage">
+    <div class="nameInputCon">
+        <label class="form-label">Customer Name:</label>
+        <input #name type="text" value={{customerName}} (keyup)="setCustomerName(name.value)">
+    </div>
+    <div class="menuItems">
+        <div *ngFor="let menuItem of menuItems; let i = index" class="menuItem">
+            <img src={{menuItem.imageUrl}} class="image">
+            <div class="manipulateCon">
+                <h3>{{menuItem.name}}</h3>
+                <p>{{menuItem.price | number}}円</p>
+                <label class="form-label">Number of Orders:</label>
+                <input #numberOfItem type="number" min="0" value={{numOfMenuItems[i]}} (change)="setNumOfItem(numberOfItem.value, i)">
+            </div> 
+        </div>
+    </div>
+    <div class="totalCon">
+        <h3>Order Total: {{calculateTotal()}}円</h3>
+        <div class="btnCon">
+            <button [disabled]="checkSubmit()" type="button" (click)="onClickSubmitUpdateOrder()">Submit/Update Order</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+.completedOrderPage{
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    width: 60%;
+    
+    font-size: 25px;
+    background:rgba(137, 12, 12, 0.4);
+    
+}
+
+tr, th{
+    margin: 1rem;
+}
